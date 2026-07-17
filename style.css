@@ -1,50 +1,56 @@
-        transform: none;
-        margin: 30px auto 0 auto;
-        justify-self: center;
-    }
-    .spinning-badge-container {
-        display: none; /* Hide badge on medium viewports */
+/* Label NUVI - Custom Design System & Stylesheet */
+/* LABEL NUVI - Custom Premium Design System & Stylesheet */
+:root {
+    --bg-color: #070707;
+    --text-color: #ffffff;
+    --text-muted: #8c8c8c;
+    --text-dim: #333333;
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 255, 255, 0.2);
+    --bg-color: #0b0101;
+    --bg-gradient: radial-gradient(circle at center, #210505 0%, #080000 100%);
+    --accent-red: #8f1717;
+    --text-color: #f7f5f2;
+    --text-muted: #a39c94;
+    --text-dim: #4f4741;
+    --border-color: rgba(247, 245, 242, 0.07);
+    --border-hover: rgba(247, 245, 242, 0.18);
+    --font-primary: 'Inter', sans-serif;
+    --font-brand: 'Syne', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+    --glass-bg: rgba(7, 7, 7, 0.65);
+    --glass-blur: 20px;
+    --font-serif: 'Playfair Display', serif;
+    --glass-bg: rgba(13, 2, 2, 0.65);
+    --glass-blur: 24px;
+    --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: all 0.2s ease;
+    --transition-fast: all 0.25s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    background-color: var(--bg-color);
+    background-image: var(--bg-gradient);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+/* Hide default cursor on desktop device screens for custom cursor experience */
+/* Hide cursor on desktop for custom interactive cursor */
+@media (min-width: 1025px) {
+    body, a, button, input, .draggable-card, .menu-toggle {
+    body, a, button, input, .phone-screen, .menu-toggle {
+        cursor: none !important;
     }
 }
-@media (max-width: 768px) {
-        grid-column: 1 / span 2;
-        order: 3;
-        margin-top: 10px;
-        justify-self: stretch;
-        text-align: center;
-    }
-    .header-right {
-        order: 2;
-    .status-indicator {
-        justify-content: center;
-        width: 100%;
-    }
-    .archive-btn {
-        display: none;
-    }
-    .glitch-title {
-        font-size: 3.2rem;
-    }
-    .footer {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        gap: 20px;
-        text-align: center;
-        padding-top: 20px;
-        justify-items: center;
-        padding-bottom: 30px;
-    }
-    .footer-left, .footer-center, .footer-right {
-        justify-self: center;
-    }
-    .sidebar-menu {
-        width: 100%;
-        right: -100%;
-    .phone-container-3d {
-        width: 260px;
-        height: 530px;
-    }
-    .screen-coming-soon {
-        font-size: 2.5rem;
-    }
-}
+/* Scrollbar reset */
+::-webkit-scrollbar {
