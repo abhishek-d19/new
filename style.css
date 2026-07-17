@@ -1,0 +1,50 @@
+        transform: none;
+        margin: 30px auto 0 auto;
+        justify-self: center;
+    }
+    .spinning-badge-container {
+        display: none; /* Hide badge on medium viewports */
+    }
+}
+@media (max-width: 768px) {
+        grid-column: 1 / span 2;
+        order: 3;
+        margin-top: 10px;
+        justify-self: stretch;
+        text-align: center;
+    }
+    .header-right {
+        order: 2;
+    .status-indicator {
+        justify-content: center;
+        width: 100%;
+    }
+    .archive-btn {
+        display: none;
+    }
+    .glitch-title {
+        font-size: 3.2rem;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        gap: 20px;
+        text-align: center;
+        padding-top: 20px;
+        justify-items: center;
+        padding-bottom: 30px;
+    }
+    .footer-left, .footer-center, .footer-right {
+        justify-self: center;
+    }
+    .sidebar-menu {
+        width: 100%;
+        right: -100%;
+    .phone-container-3d {
+        width: 260px;
+        height: 530px;
+    }
+    .screen-coming-soon {
+        font-size: 2.5rem;
+    }
+}
