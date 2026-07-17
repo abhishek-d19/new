@@ -1,32 +1,55 @@
-                    <span class="helper-dot"></span>
-                    <span>TAP THE SCREEN TO EXPLORE LOOKS</span>
-                </div>
-                <!-- Countdown Section -->
-                <div class="countdown-container">
-                    <div class="countdown-item">
-                <!-- Subscription Box -->
-                <div class="subscription-card">
-                    <h3 class="card-title">REQUEST ATELIER DEBUT ACCESS</h3>
-                    <h3 class="card-title">REQUEST ATELIER ACCESS</h3>
-                    <p class="card-subtitle">Receive private keys to Collection I prior to public release.</p>
-                    <form class="subscribe-form" id="subscribe-form">
-                        <div class="input-group">
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-left">
-                <span class="copyright">&copy; 2026 Label NUVI. ALL RIGHTS RESERVED.</span>
-                <span class="copyright">&copy; 2026 LABEL NUVI. ALL RIGHTS RESERVED.</span>
-            </div>
-            <div class="footer-center">
-                <span class="location-coords">48.8566&deg; N, 2.3522&deg; E &mdash; PARIS &bull; NYC</span>
-            <i data-lucide="x"></i>
-        </button>
-        <div class="sidebar-content">
-            <div class="sidebar-brand">Label NUVI</div>
-            <div class="sidebar-brand">LABEL NUVI</div>
-            <nav class="sidebar-nav">
-                <a href="#" class="sidebar-link active">COMING SOON</a>
-                <a href="#" class="sidebar-link disabled">COLLECTION I (LOCKED)</a>
-    <script src="app.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label NUVI | Coming Soon</title>
+    <meta name="description" content="Label NUVI - An upcoming contemporary luxury fashion brand. Collection I launching soon. Subscribe for early access.">
+    <title>LABEL NUVI &mdash; Coming Soon</title>
+    <meta name="description" content="LABEL NUVI - An upcoming contemporary luxury fashion brand. Collection I launching soon. Subscribe for early access.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- GSAP for premium animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- Three.js for the 3D rotating text cylinders -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Mouse-Following Cursor -->
+    <div id="custom-cursor">
+        <span class="cursor-text">EXPLORE</span>
+    </div>
+    <!-- Background Canvas Container for Three.js -->
+    <div id="canvas-container"></div>
+    
+    <!-- Subtle overlay grid for tech/fashion look -->
+    <div class="grid-overlay"></div>
+    
+    <!-- Noise overlay for high-end grain texture -->
+    <div class="noise-overlay"></div>
+    <!-- Background Glow and Gradient -->
+    <div class="radial-glow"></div>
+    <div class="vignette-overlay"></div>
+    <!-- Kinetic Background Scrolling Text (behind phone) -->
+    <div class="kinetic-bg">
+        <div class="kinetic-track kinetic-track-left">
+            <span class="kinetic-text">COMING SOON &bull; COMING SOON &bull; COMING SOON &bull; COMING SOON &bull;</span>
+        </div>
+        <div class="kinetic-track kinetic-track-right">
+            <span class="kinetic-text outline">LABEL NUVI &bull; LABEL NUVI &bull; LABEL NUVI &bull; LABEL NUVI &bull;</span>
+        </div>
+    </div>
+    <!-- Infinite Scrolling Marquee (Top) -->
+    <div class="marquee marquee-top">
+        <div class="marquee-content">
